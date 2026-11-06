@@ -1,0 +1,53 @@
+{
+	"name": "@supertiny99/dsh-usage-dashboard",
+	"version": "0.1.0",
+	"type": "module",
+	"description": "Local usage dashboard for DSH (DeepSeek Harness): read-only aggregation of ~/.dsh session data — token usage by model (4 buckets), session counts, tool call top-N. Zero config, zero external dependencies, works offline.",
+	"author": "supertiny99",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/supertiny99/dsh-usage-dashboard.git"
+	},
+	"bugs": {
+		"url": "https://github.com/supertiny99/dsh-usage-dashboard/issues"
+	},
+	"homepage": "https://github.com/supertiny99/dsh-usage-dashboard#readme",
+	"keywords": [
+		"dsh",
+		"deepseek",
+		"cordis",
+		"plugin",
+		"token-usage",
+		"dashboard",
+		"analytics"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"exports": {
+		".": "./index.js",
+		"./client": "./client.js"
+	},
+	"engines": {
+		"dsh": ">=0.2.1-rc.5"
+	},
+	"files": [
+		"index.js",
+		"client.js",
+		"cordis.patch.yml"
+	],
+	"dependencies": {
+		"fzstd": "^0.1.1"
+	},
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		},
+		"client": {
+			"platform": "web",
+			"immediately": true,
+			"inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+		}
+	}
+}
