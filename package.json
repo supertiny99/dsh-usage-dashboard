@@ -1,6 +1,6 @@
 {
 	"name": "@supertiny99/dsh-usage-dashboard",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"description": "Local usage dashboard for DSH (DeepSeek Harness): read-only aggregation of ~/.dsh session data — token usage by model (4 buckets), session counts, tool call top-N. Zero config, zero external dependencies, works offline.",
 	"author": "supertiny99",

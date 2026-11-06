@@ -6,7 +6,7 @@
  * 数据全部来自 Host 的 /usage-dashboard/data 端点（只读本地 ~/.dsh）。
  */
 window.__ModuleLoader__.load({
-	id: '@local/dsh-usage-dashboard',
+	id: '@supertiny99/dsh-usage-dashboard',
 	factory(require) {
 		const React = require('react');
 const h = React.createElement;

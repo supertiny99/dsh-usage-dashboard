@@ -23,13 +23,13 @@
 **GitHub**（源码安装，tag 定版本）：
 
 ```
-github:supertiny99/dsh-usage-dashboard#v0.1.0
+github:supertiny99/dsh-usage-dashboard#v0.1.1
 ```
 
 **tarball**（离线递送）：
 
 ```
-file:/绝对路径/supertiny99-dsh-usage-dashboard-0.1.0.tgz
+file:/绝对路径/supertiny99-dsh-usage-dashboard-0.1.1.tgz
 ```
 
 要求：DSH `>= 0.2.1-rc.5`（`engines.dsh` 准入自动校验）。
