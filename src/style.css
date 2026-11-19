@@ -23,6 +23,14 @@
 	overflow: auto;
 	container-type: inline-size;
 }
+
+/* 宿主窗口安全区（pm-CHG-002）：darwin 顶部横带被红绿灯 / 侧栏开关 /
+   shell.leading 控制占用，入口页恒定垫高让位（对齐官方 PluginManagerPage），
+   侧栏展开/收起共用同一垫高，切换不跳动。非 darwin 不垫（Windows 由 frame
+   按标题栏高度下压）。var() 兜底 0 兼容无平台属性的 web 环境。 */
+html[data-platform='darwin'] .ud-root {
+	padding-top: calc(40px + var(--dsh-frame-top-clearance, 0px));
+}
 .ud-root *,
 .ud-root *::before,
 .ud-root *::after {

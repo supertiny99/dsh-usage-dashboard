@@ -1,6 +1,6 @@
 {
 	"name": "@supertiny99/dsh-usage-dashboard",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"type": "module",
 	"description": "DSH 本地用量分析工作台，按实际事件统计每日趋势、项目与模型用量，支持会话钻取和数据覆盖诊断。",
 	"author": "supertiny99",
